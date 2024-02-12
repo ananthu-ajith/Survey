@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifying character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- viewport properties Which is used to make the responsive webpages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Description of the document -->
+    <meta name="description" content="Survey Form" />
+
+    <!-- Specifying keywords relevant to the document -->
+    <meta name="keywords" content="survey, form, questionnaire" />
+
+    <!-- Author of the document -->
+    <meta name="author" content="Your Name" />
+
+    <!-- Link of stylesheet -->
+    <link rel="stylesheet" href="./Assets/index.css" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <div id="heading"><span>Survey Form</span></div>
+    <form id="form">
+      <!-- personaldetails -->
+      <header class="personaldetails">
+        <div class="formelements">
+          <div class="textelements">
+            <label>Full Name</label>
+          </div>
+          <div class="inputelements">
+            <input type="text" placeholder="First Name*" required />
+            <input type="text" placeholder="Middle Name" />
+            <input type="text" placeholder="Last Name*" required />
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <label>Gmail</label>
+          </div>
+          <div class="inputelements">
+            <input type="mail" placeholder="@gmail.com" />
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <label>Date of Birth</label>
+          </div>
+          <div class="inputelements">
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <label> Gender</label>
+          </div>
+
+          <div>
+            <select>
+              <option value="default" selected disabled>--Select--</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <label>Phone Number</label>
+          </div>
+          <div class="inputelements">
+            <input type="number" placeholder="Mobile" />
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <label>Resume</label>
+          </div>
+          <div class="inputelements">
+            <input type="file" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Survey Questions -->
+
+      <fieldset id="survey">
+        <legend class="subheading">Survey Questions</legend>
+
+        <div class="formelements">
+          <div class="textelements">
+            <span>Favourite color</span>
+          </div>
+
+          <div class="inputelements">
+            <label>
+              <input type="radio" name="color" />
+              Blue
+            </label>
+            <label>
+              <input type="radio" name="color" />
+              Red
+            </label>
+            <label>
+              <input type="radio" name="color" />
+              Black
+            </label>
+            <label>
+              <input type="radio" name="color" />
+              Green
+            </label>
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <span>Hobbies</span>
+          </div>
+          <div class="inputelements">
+            <label><input type="checkbox" />Reading</label>
+            <label><input type="checkbox" />Games</label>
+            <label><input type="checkbox" />Cinema</label>
+            <label><input type="checkbox" />Writing</label>
+          </div>
+        </div>
+
+        <div class="formelements">
+          <div class="textelements">
+            <span>How often do you exercise</span>
+          </div>
+          <div class="inputelements">
+            <input list="browsers" />
+            <datalist id="browsers">
+              <option value="Daily"></option>
+              <option value="3-4 times a week"></option>
+              <option value="Once or twice a week"></option>
+              <option value="Rarely"></option>
+              <option value="Never"></option>
+            </datalist>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Feedback -->
+
+      <div>
+        <span> Feedback </span>
+      </div>
+      <div><textarea></textarea></div>
+
+      <div><input type="submit" value="Submit" /></div>
+    </form>
+  </body>
+</html>
